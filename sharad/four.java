@@ -1,11 +1,15 @@
-public class four {
+import java.util.Scanner;
+public class four{
     public static void main(String[] args) {
-        int n=16;
-        if((n & (n-1))==0){
-            System.out.println("power of 2");
+          Scanner sc= new Scanner(System.in);
+        System.out.println("Enter any number=");
+        int n=sc.nextInt();
+        if((n&(n-1))==0){
+            System.out.println("Power of 2");
+        }else if(n==1 || n==0){
+            System.out.println("Power of 2");
         }else{
-            System.out.println("Not power of 2");
+            System.out.println("not Power of 2");
         }
     }
-    
 }
